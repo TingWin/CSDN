@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSDN详情</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script type="text/javascript"  src="https://cdn.bootcss.com/jquery/3.2.0/jquery.js"></script>
+	<script src="./js/vue.js"></script>
+	<link rel="stylesheet" href="./css/details.css">
+</head>
+<body>
+	<div id="main">
+		<div class="header">
+			<div class="header-left">
+				<div class="left-list"></div>
+				<div class="logo"></div>
+			</div>
+			<div class="header-right">
+				<div class="login"> 
+					<a class="personal" href="./personal.html">个人中心</a>       
+					<a href="./registered.html">登录</a>      
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="top-user">
+				<div class="left">
+				</div>
+				<div class="right">
+					<a href="#">关注</a>
+				</div>
+			</div>
+			<div class="news-item">
+				<h1 class="article_title">{{list.title}}</h1>
+				<div class="info-tag">          
+					<a class="tag">转载</a>        
+					<a class="user-name">{{list.date}}</a>     
+					<a class="read-count">{{list.read_num}}</a>      
+				</div>
+			</div>
+			<div class="news-view"></div>
+			<div class="user-info">
+				<div class="user-pic">
+					<img src="./images/user-pic.jpg" alt="">
+					<span class="user-name">{{list.author_name}}</span>
+				</div>
+				<div class="user-blog">
+	                <span>访问量 </span>
+	                <span class="num">{{list.read_num}}</span>
+	                <span>原创 </span>
+	                <span class="num">147</span>
+	                <span class="user-btn">博主更多文章&gt;</span>
+            	</div>
+			</div>
+			<div class="foot">
+				<div class="foot-one">
+					<img src="./images/timg.jpg" alt="">
+				</div>
+				<div class="foot-tow">CSDN</div>
+				<div class="foot-three">CSDN精彩内容推荐</div>
+				<div class="foot-forth">
+					<a href="#">查看熊掌号</a>
+				</div>
+			</div>
+			<div class="comment">
+				<div class="comment-title clearfix">
+					<span class="comment-num">1条评论</span>
+					<span class="write-comment">
+						<a href="/csdnsevenn/comment/post?id=79471830"> 写评论</a>
+					</span>
+				</div>
+				<ul class="comment-content">
+					<li class="clearfix" v-for="item in readList">
+						<div class="comment-user ">
+							<div class="user-news">
+								<div class="user-news-info">
+									<a href="#">
+										<img :src="item.image" alt="">
+										<span>{{item.title}}</span>
+									</a>
+								</div>
+							</div>
+							<div class="reply">
+								<a href="#">回复</a>
+							</div>
+						</div>
+						<div class="comment-info">
+							<span>{{item.content}}</span>
+							<div class="comment_time">{{item.createtime}} <span class="floor">#1楼</span></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="operate">
+			<div class="operate-c clearfix">
+				<a href="#">
+					<span>点赞</span>
+					<span class="num"></span>
+				</a>
+			</div>
+			<div class="operate-c clearfix">
+				<a href="#">
+					<span>评论</span>
+					<span class="num"></span>
+				</a>
+			</div>
+			<div class="operate-c clearfix">
+					<span ref="add" @click="add">收藏</span>
+					<span class="num"></span>
+			</div>
+		</div>
+	</div>
+	<script src="./js/details.js"></script>
+</body>
+</html>

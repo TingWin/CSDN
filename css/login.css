@@ -1,0 +1,74 @@
+html,body,ul,li{
+	padding:0;
+	margin:0;
+}
+html,body {
+    font-size: 62.5%;
+}
+/*a{
+	text-decoration: none;
+}*/
+li{
+	list-style: none;
+}
+.box{
+	height:42rem;
+	width:25rem;
+	border:1px solid #d5dce5;
+	margin:0 auto;
+	border-radius: 6px;
+	margin-top:4rem;
+}
+.box h3{
+	font-size: 1.5rem;
+    color: #4d5e73;
+    padding: 25px 30px 15px 30px;
+}
+.box>input{
+	padding: 12px 0;
+	text-indent: 23px;
+	border: 1px solid #d5dce5;
+	margin-bottom: 2rem;
+	margin-left: 2.4rem;
+    border-radius: 3px;
+    color:#d5dce5;
+    width:20rem;
+}
+.forget input{
+	margin-left: 2.4rem;
+}
+.forget label{
+	color: #4d5e73;
+	font-weight: 700;
+}
+.forget>span{
+	float:right;
+	margin-right: 2.5rem;
+	color: #4d5e73;
+}
+.denglu input{
+	border-radius: 3px;
+	margin-left: 2.4rem;
+	border: solid 1px #c90000;
+	box-shadow: 0 0 3px #fff inset;
+	margin-top: 2rem;
+	background: #c90a16;
+    height: 3rem;
+    line-height: 3rem;
+    color:#fff;
+    text-align: center;
+    width:20rem;
+}
+hr{
+	margin:2rem 0;
+}
+.third-denglu span{
+    color: #666;
+    margin-left: 2.4rem;
+}
+.third-denglu img{
+	margin: 1.5rem 2.4rem;
+}
+.third-denglu a{
+	margin-left: 2rem;
+}

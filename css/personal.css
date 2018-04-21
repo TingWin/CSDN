@@ -1,0 +1,72 @@
+html, body,ul,li {
+	margin: 0;
+	padding: 0;
+}
+html,body {
+	font-size: 62.5%;
+	background: #f4f4f4;
+}
+a {
+	text-decoration: none;
+}
+.header {
+	height: 5rem;
+	width: 100%;
+	background-color: #fff;
+}
+.header>div {
+	height: 5rem;
+	width: 100%;
+    position: absolute;
+    left:50%;
+    top:0;     
+}
+.header>div span {
+	font-size: 1.8rem;
+	color: #333;
+	line-height: 5rem;
+}
+.content {
+	height: 50rem;
+	width: 100%;
+	background: #fff;
+	margin-top: 5rem;
+}
+.content .user-info {
+	padding-top: 5rem;
+	margin-left: 3rem;
+}
+.content .user-info .userimg img {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    padding: 0.1rem;
+    border: 0.1rem solid #eee;
+}
+.content .user-info .username {
+	font-size: 2rem;
+    color: #4f4f4f;
+    font-weight: 700;
+    position: relative;
+    top: -5rem;
+    margin-left: 2rem;
+}
+.content .my-blog {
+	margin-top: 2rem;
+}
+.content .my-blog ul li {
+	border-bottom: solid 0.2rem #ddd;
+    box-shadow: 0 0 0 0 #ddd, inset 0 0 0 0 #ddd;
+    padding: 3rem 1.6rem;
+}
+.content .my-blog ul li a span {
+    font-size: 2rem;
+    color: #4f4f4f;
+}
+.content .my-blog ul li a .iconfont {
+    width: 10%;
+    float: right;
+    font-size: 1.35rem;
+    color: #c7c7cc;
+    text-align: right;
+}

@@ -1,0 +1,44 @@
+html, body,ul,li {
+	margin: 0;
+	padding: 0;
+}
+html,body {
+	font-size: 62.5%;
+	background: #f4f4f4;
+}
+a {
+	text-decoration: none;
+}
+.header {
+	height: 5rem;
+	width: 100%;
+	background-color: #fff;
+}
+.header>div {
+	height: 5rem;
+	width: 100%;
+    position: absolute;
+    left:50%;
+    top:0;     
+}
+.header>div span {
+	font-size: 1.8rem;
+	color: #333;
+	line-height: 5rem;
+}
+.blog-list {
+	margin-top: 5rem;
+}
+.blog-list li {
+	padding: 1rem 0;
+	margin-top: 1rem;
+	background-color: #fff;
+}
+.blog-list li h2 {
+	font-size: 2rem;
+	font-weight: 700;
+}
+.blog-list li span {
+	font-size: 1.6rem;
+	color: #333;
+}

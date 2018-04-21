@@ -1,0 +1,241 @@
+html,body {
+	margin: 0;
+	padding: 0;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: #f5f5f5;
+}
+html,body {
+	font-size: 62.5%;
+}
+a {
+	text-decoration: none;
+}
+#main {
+	padding: 4.8rem 0 4.8rem 0;
+    border-top: 1px solid #e9e9e9;
+}
+.container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container .login {
+	background: #fefefe;
+    border: 1px solid #d5dce5;
+    border-radius: 0.5rem;
+    /*margin: 0 10rem;*/
+}
+.container .login h3 {
+	margin: 0;
+    font-size: 3em;
+    color: #4d5e73;
+    padding: 2.5rem 3rem 1.5rem 3rem;
+}
+.container .login .user-info {
+    padding: 0 3rem;
+}
+.container .login .user-info input {
+    display: block;
+    width: 100%;
+    padding: 1.2rem 0;
+    border: 1px solid #d5dce5;
+    margin-bottom: 2rem;
+    font-weight: normal;
+    text-indent: 2.3rem;
+    outline: 0;
+    font-size: 2.25em;
+    border-radius: 0.3rem;
+}
+.container .login .forget {
+	margin-top: 1rem;
+    color: #4d5e73;
+    font-size: 2em;
+    margin: 0 3rem;
+}
+.container .login .forget input {
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+input[type=checkbox] {
+    margin: 0.4rem 0 0;
+    line-height: normal;
+    padding: 0;
+    box-sizing: border-box;
+}
+label {
+    cursor: default;
+}
+.container .login .forget a {
+	color: #4d5e73;
+    text-decoration: none;
+}
+.container .login .forget span.forget-passward {
+	position: relative;
+	right: -13rem;
+}
+.container .login .logging {
+    background: #c90a16;
+    height: 4.4rem;
+    line-height: 4.4rem;
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 3em;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 2rem;
+    border: solid 1px #c90000;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 0.3rem #fff inset;
+}
+.container .login .login-button {
+	padding: 0 3rem;
+}
+.container .login .line {
+	background: #eee;
+    height: 0.1rem;
+    margin-top: 4rem;
+}
+.container .login .third-part {
+    padding: 2rem 5.2rem 3.5rem 3rem;
+}
+.container .login .third-part span {
+    display: block;
+    font-size: 2em;
+    color: #666;
+    margin-bottom: 1.1rem;
+}
+.container .login .third-part .sina {
+	background-image: url(../images/weibo_icon.png);
+    background-repeat: no-repeat;
+    margin-right: 0.5rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 1px solid black;
+    background-position: -74px 0;
+	
+}
+.container .login .third-part .register-now {
+    margin-top: 2rem;
+}
+.container .login .third-part span {
+    display: block;
+    font-size: 2.083em;
+    color: #666;
+    margin-bottom: 1.1rem;
+}
+.container .login .third-part .register-now span {
+    display: inline-block;
+}
+.container .login .third-part .register-now .register a {
+    margin-left: 1.5rem;
+    color: #428bca;
+}
+.footer {
+	width: 100%;
+    background-color: #fff;
+    margin-top: 1rem;
+    overflow: hidden;
+    border-top: 1px solid #f0f0f0;
+}
+.footer .sub-menu {
+	width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 1.4rem;
+    overflow: hidden;
+    margin-top: 1.5rem;
+}
+.footer .sub-menu a {
+    color: #666;
+    font-family: 'microsoft yahei';
+    text-decoration: none;
+    display: block;
+    height: 2rem;
+    float: left;
+    margin-bottom: 1rem;
+}
+.footer .sub-menu span {
+    color: #d1d1d1;
+    padding: 0 0.8rem;
+    display: block;
+    float: left;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+.footer .foot-contact {
+	font-family: 'microsoft yahei';
+    font-size: 12px;
+    overflow: hidden;
+    width: 100%;
+}
+.footer .foot-contact .qq {
+	display: block;
+    float: left;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    padding-left: 2rem;
+    background: url(../images/qq.png) left 1rem no-repeat;
+    margin-right: 1rem;
+    color: #666;
+}
+.footer .foot-contact .sina {
+	display: block;
+    float: left;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    padding-left: 2rem;
+    background: url(../images/weibo.png) left 1rem no-repeat;
+    margin-right: 1rem;
+    color: #666;
+}
+.footer .foot-contact .email {
+	display: block;
+    float: left;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    padding-left: 2rem;
+    background: url(../images/mail_icon.png) left 11px no-repeat;
+    margin-right: 1rem;
+    color: #666;
+}
+.footer .foot-contact .phone {
+    display: block;
+    float: left;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    padding-left: 2rem;
+    background: url(../images/phone_icon.png) left 11px no-repeat;
+    color: #666;
+}
+.footer .foot-contact span {
+    display: block;
+    float: left;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    color: #666;
+}
+.footer .foot-contact .interval {
+    padding: 0 0.6rem;
+    margin: 0rem;
+}
+.footer .foot_copyright {
+    font-size: 1.2rem;
+    color: #9c9c9c;
+    font-family: 'microsoft yahei';
+    width: 100%;
+}
+.footer .foot_copyright span {
+    display: block;
+    float: left;
+    height: 2.1rem;
+    line-height: 2.1rem;
+}
+.footer .foot_copyright a {
+    display: block;
+    float: left;
+    height: 2.1rem;
+    line-height: 2.1rem;
+}
++

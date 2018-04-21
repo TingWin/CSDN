@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>发布文章</title>
+	<script src="./js/vue.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+	<script type="text/javascript" src="./utf8-php/ueditor.config.js"></script>
+	<script type="text/javascript" src="./utf8-php/ueditor.all.min.js"></script>
+	<script type="text/javascript" src="./utf8-php/lang/zh-cn/zh-cn.js"></script>
+	<link rel="stylesheet" href="./css/fabu.css">
+</head>
+<body>
+	<div id="main">
+		<div class="header clearfix">
+			<a href="#" class="nav-link">创作中心</a>
+			<a href="#" class="btn-bd-red">写博客</a>
+			<a href="#" class="userimg"><img src="./images/user.gif" alt=""></a>
+			<a href="#" class="username">qqq_23789</a>
+		</div>
+		<div class="content clearfix">
+			<div class="sidebar">
+			<div class="list-group-item list-group-title">内容</div>
+			<div class="list-group">
+		        <a href="#" class="list-group-item active">文章管理</a>
+		        <a href="#" class="list-group-item">专栏管理</a>
+		        <a href="#" class="list-group-item" data-title="comment">评论管理</a>
+		        <a href="#" class="list-group-item">个人分类管理</a>
+    		</div>
+    		<div class="list-group-item list-group-title">设置</div>
+    		<div class="list-group">
+		        <a href="#" class="list-group-item">博客设置</a>
+		        <a href="#" class="list-group-item">栏目管理</a>
+    		</div>
+		</div>
+		<div class="content-body">
+			<div class="title-box">
+				<input class="title" v-model="title" type="text" name="title" maxlength="100" placeholder="输入文章标题">
+			</div>
+			<script id="container" name="content" type="text/plain" style="width:100%;height:600px;"></script>
+			<p>
+				<select class="droBlogType" v-model="class_id">
+                    <option value="0">选择分类</option>
+                    <option value="28">人工智能</option>
+                    <option value="1">移动开发</option>
+                    <option value="29">物联网</option>
+                    <option value="15">架构</option>
+                    <option value="2">云计算/大数据</option>
+                    <option value="17">互联网</option>
+                    <option value="30">游戏开发</option>
+                    <option value="12">运维</option>
+                    <option value="6">数据库</option>
+                    <option value="14">前端</option>
+                    <option value="31">后端</option>
+                    <option value="16">编程语言</option>
+                    <option value="3">研发管理</option>
+                    <option value="32">安全</option>
+                    <option value="33">程序人生</option>
+                    <option value="34">区块链</option>
+                    <option value="35">音视频开发</option>
+                    <option value="36">资讯</option>
+                    <option value="37">计算机理论与基础</option>
+                </select>
+			</p>
+			<div class="txt-box">
+				<input @click="issue" class="btnPublish" type="button"  value="发布博客" title="发布博客">
+				<input @click="edit" class="btnCancel" type="button" title="返回列表页" value="编辑成功">
+			</div>
+		</div>
+		</div>
+	</div>
+	<script src="./js/fabu.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>博客列表</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script type="text/javascript"  src="https://cdn.bootcss.com/jquery/3.2.0/jquery.js"></script>
+	<script src="./js/vue.js"></script>
+	<link rel="stylesheet" href="./css/myblog.css">
+</head>
+<body>
+	<div id="main">
+		<div class="header">
+			<div><span>博客中心</span></div>
+		</div>
+		<ul class="blog-list">
+			<li v-for="item in list">
+				<h2>{{item.title}}</h2>
+				<span>{{ item.date }}</span>   
+				<span>{{ item.read_num }}</span>   
+				<span>{{ item.classify_name }}</span>
+				<p>
+					<button @click="deleteBlog(item)">删除</button>
+					<a :href="'./fabu.html?id='+item.id"><button>编辑</button></a>
+					
+				</p>
+			</li>
+		</ul>
+	</div>
+	<script src="./js/myblog.js"></script>
+</body>
+</html>

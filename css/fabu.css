@@ -1,0 +1,151 @@
+html,body {
+	margin: 0;
+	padding: 0;
+	background: #f4f4f4;
+}
+a {
+	text-decoration: none;
+}
+.header {
+	background-color: #fff;
+	margin-top: 10px;
+    width: 100%;
+    padding: 20px 0;
+}
+.header .nav-link {
+	font-size: 18px;
+    color: #888;
+    padding: 0px;
+}
+.header .nav-link, .header .btn-bd-red, .header .username {
+	position: relative;
+	top: -21px;
+}
+.header .btn-bd-red {
+    line-height: 1.5;
+    font-weight: 400;
+    padding: 5px 10px;
+    color: #C92027;
+    border: 1px solid #C92027;
+    border-radius: 5px;
+    margin-left: 66%;
+}
+.header .username {
+	margin-left: 15px;
+	color: #3D3D3D;
+	font-size: 18px;
+}
+.header .userimg {
+	margin-left: 15px;
+
+}
+.header .userimg img {
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+}
+.clearfix:after {
+	clear: both;
+	height: 0;
+	content: "";
+	display: block;
+}
+.content {
+	margin-top: 20px;
+	width: 100%;
+	height: 900px;
+}
+.sidebar {
+	float: left;
+	width: 20%;
+	height: 900px;
+    border-right: 1px solid #e9e9e9;
+    background: #fff;
+}
+.list-group-title {
+    padding: 10px 5px;
+    color: #bbb;
+}
+.list-group .list-group-item {
+    font-size: 14px;
+    color: #4f4f4f;
+    position: relative;
+    display: block;
+    background-color: #fff;
+    padding: 13px 5px;
+    margin-left: 5px;
+}
+.list-group .list-group-item:hover {
+	color: #fff;
+	background-color: #C92027; 
+}
+.list-group .list-group-item.active {
+    background-color: #C92027;
+    border-color: #C92027;
+    z-index: 2;
+    color: #fff;
+}
+.content-body {
+	float: left;
+    background-color: #fff;
+    width: 79%;
+    height: 900px;
+}
+.content-body .title-box {
+	margin-bottom: 20px;
+}
+.content-body .title-box input {
+	display: block;
+	width: 99%;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    padding: 0 16px;
+    margin: 20px 5px 5px 5px;
+    border: none;
+    background-color: #efefef;
+    color: #4f4f4f;
+}
+.content-body p select.droBlogType {
+    width: 180px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    padding-left: 16px;
+}
+.content-body p select.droBlogType option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    padding: 0px 2px 1px;
+}
+.content-body .txt-box .btnPublish {
+	font-size: 16px;
+	border: 1px solid #C92027;
+    color: #C92027;
+    padding: 12px 20px;
+    background-color: transparent;
+    border-radius: 5px;
+    
+}
+.content-body .txt-box .btnPublish:hover {
+	color: #fff;
+	background-color: #dc3545;
+}
+.content-body .txt-box .btnCancel {
+	color: #6c757d;
+    background-color: transparent;
+    background-image: none;
+    border-color: #6c757d;
+    margin-left: 24px;
+    border: 1px solid #6c757d;
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+.content-body .txt-box .btnCancel:hover {
+	color: #fff;
+	background-color: #6c757d;
+}

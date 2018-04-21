@@ -1,0 +1,380 @@
+html, body,ul,li,h1,h4 {
+	margin: 0;
+	padding: 0;
+}
+html,body {
+	font-size: 62.5%;
+	background: #fff;
+	font-family: 'PingFang SC','Microsoft YaHei',SimHei,Arial,SimSun;
+}
+ul,li {
+	list-style: none;
+}
+a {
+    list-style-type: none;
+    text-decoration: none;
+    outline: 0;
+}
+#main {
+	margin: 0 3.2rem;
+}
+.clearfix:after {
+	clear: both;
+	height: 0;
+	content: "";
+	display: block;
+}
+.header {
+	font-size: 1.2rem;
+    font-family: 'PingFang SC','Microsoft YaHei',SimHei,Arial,SimSun;
+    color: #333;
+    line-height: 5.2rem;
+    background: #fff;
+    box-shadow: 0 0.2rem 0.4rem 0 rgba(0,0,0,.05);
+    height: 5.2rem;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.header .header-left {
+	overflow: hidden;
+    width: 67%;
+    height: 2.4rem;
+    position: relative;
+    float:left;
+}
+.header .header-left .left-list {
+	width: 5.0rem;
+    float: left;
+}
+.header .header-left .logo {
+	position: relative;
+    width: 1.3rem;
+}
+.header .header-right {
+	margin-left: auto;
+	float: right;
+	margin-right: 1rem;
+}
+.header .header-right .search_btn {
+    margin-right: 1.2rem;
+    float: left;
+}
+.header .header-right .search_btn svg {
+    width: 2rem;
+    height: 2rem;
+    margin-top: 2rem;
+}
+.header .header-right .login {
+	display: block;
+    margin-top: 0.2rem;
+    float: right;
+}
+.header .header-right .login a {
+	font-size: 1.4rem;
+    color: #C92027;
+}
+.header .header-right .login .personal{
+    color: #349edf;
+}
+.content {
+	margin-top: 5.2rem;
+}
+.content .top-user {
+	padding: 5.32rem 0;
+    border-bottom: 1px solid #ddd;
+}
+.content .top-user .left {
+	float: left;
+}
+.content .top-user .left a {
+	float: left;
+}
+.content .top-user .left img {
+	display: inline-block;
+    width: 4.94rem;
+    height: 4.94rem;
+    background-color: #abafab;
+    border-radius: 50%;
+}
+.content .top-user .left span {
+	margin-left: 1.16rem;
+    font-size: 1.6rem;
+    width: 2.78rem;
+    font-weight: 700;
+    position: relative;
+    top: -1.6rem;
+     color: #4f4f4f;
+}
+.content .top-user .right {
+	float: right;
+}
+#main .content .top-user .right a {
+	width: 5.3rem;
+	height: 2.9rem;
+	border-radius: 0.4rem;
+	display: block;
+    background: #c92027;
+    color: #fff;
+    position: relative;
+    top: -2.5rem;
+    text-align: center;
+    font-size: 1.6rem;
+}
+.content .news-item h1 {
+	font-size: 3rem;
+    color: #333;
+    letter-spacing: 0;
+    line-height: 3rem;
+    padding-top: 3.32rem;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-weight: 700;
+}
+.content .news-item .info-tag {
+	font-size: 1.8rem;
+    color: #999;
+    letter-spacing: 0;
+    line-height: 1.64rem;
+    margin-top: 4.08rem;
+    padding-bottom: 2.16rem;
+    margin-bottom: 1.32rem;
+    border-bottom: 1px solid #ddd;
+}
+.content .news-item .info-tag a {
+	margin-right: 2rem;
+}
+.content .user-info {
+	border: 1px solid #ddd;
+    padding: 2.32rem;
+    margin-top: 2.44rem;
+    margin-bottom: 1.44rem;
+}
+.content .user-info .user-pic {
+	margin-bottom: 1.44rem;
+}
+.content .user-info .user-pic img {
+	width: 6.2rem;
+    height: 6.2rem;
+    background-color: #eee;
+    border-radius: 50%;
+}
+.content .user-info .user-pic .user-name {
+	font-size: 2.28rem;
+    color: #4f4f4f;
+    letter-spacing: 0;
+    margin-left: 1.16rem;
+    margin-right:1.16rem;
+    font-weight: 700;
+    position: relative;
+    top: -2rem;
+}
+.content .user-info .user-blog {
+    font-size: 2.28rem;
+    color: #999;
+}
+.content .user-info .user-blog .num {
+	color: #4f4f4f;
+    margin-right: 1.24rem;
+}
+.content .user-info .user-blog .user-btn {
+	color: #79a5e5;
+	float: right;
+}
+.content .news-list {
+	margin-top: 5rem;
+}
+.content .news-list li {
+	border-top: 1px solid #ddd;
+	margin: 4rem 0;
+
+}
+.content .news-list li h4 {
+	font-size: 2.5rem;
+    color: #333;
+    letter-spacing: 0;
+    line-height: 1.52rem;
+    font-weight: 700;
+    word-break: break-all;
+    padding: 2rem 0;
+}
+.content .news-list li .read span {
+	font-size: 1.8rem;
+	margin-right: 4rem;
+}
+.content .news-list li .read .user-name {
+	color: #4f4f4f;
+}
+.content .news-list li .read .date {
+	color: #999;
+}
+.content .news-list li .end-btn {
+	width: 37rem;
+    height: 4.8rem;
+    margin: 4rem auto;
+    text-align: center;
+    border: 1px solid #ca0c16;
+    line-height: 4.8rem;
+    font-size: 2.32rem;
+    color: #ca0c16;
+    border-radius: 0.4rem;
+    display: block;
+}
+.content .news-list .last {
+	border-bottom: 1px solid #ddd;
+}
+.content .foot {
+    margin: 2rem 0;
+    position: relative;
+    z-index: 0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.content .foot .foot-one {
+	text-align: center;
+}
+.content .foot .foot-one img {
+	border: 1px solid #ececec;
+    border-radius: 50%;
+    width: 6.9rem;
+    height: 6.9rem;
+}
+.content .foot .foot-tow {
+	margin-top: 1rem;
+    text-align: center;
+    line-height: 1.6rem;
+    font-size: 1.6rem;
+    color: #333;
+    font-weight: 600;
+}
+.content .foot .foot-three {
+	width: 78%;
+    margin: auto;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #999;
+    line-height: 1.7rem;
+    font-weight: 300;
+}
+.content .foot .foot-forth {
+	text-align: center;
+    margin: 13px 0 25px;
+}
+.content .foot .foot-forth a {
+	width: 12rem;
+	padding: 1rem 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    vertical-align: middle;
+    display: inline-block;
+    color: #fff;
+    background: #3897f0;
+    border-radius: 0.3rem;
+}
+.content .comment {
+    padding: 1.32rem 1.44rem;
+    background-color: #efefef;
+}
+.content .comment .comment-title {
+	padding: 1.32rem 0;
+	margin-bottom: 2rem;
+}
+.comment-title .comment-num {
+    font-size: 2.28rem;
+    color: #4f4f4f;
+    float: left;
+}
+.comment-title .write-comment {
+	font-size: 2.28rem;
+	float: right;
+}
+.comment-title .write-comment a {
+	color: #4093c6;
+}
+.content .comment .comment-content {
+	margin-top: 6rem;
+}
+.content .comment .comment-content .comment-user {
+	margin-bottom: 1.8rem;
+}
+.content .comment-content .comment-user .user-news img {
+	border-radius: 50%;
+    width: 5.64rem;
+    height: 5.64rem;
+    background-color: #000;
+    margin-right: 1.16rem;
+}
+.content .comment-content .comment-user .user-news span {
+	font-size: 1.64rem;
+    font-weight: 700;
+    color: #4f4f4f;
+    position: relative;
+    top: -2rem;
+}
+.content .comment-content .comment-user .reply a {
+	float: right;
+	font-size: 1.8rem; 
+	color: #4093c6;
+}
+.content .comment-content .comment-info {
+    font-size: 3rem;
+    color: #4f4f4f;
+    line-height: 3rem;
+    padding-left: 6.8rem;
+    word-break: break-all;
+}
+.content .comment-content .comment-info .comment_time {
+    padding-top: 1.08rem;
+    padding-bottom: 1.32rem;
+    font-size: 2.24rem;
+    color: #999;
+}
+.content .comment-content .comment-info .comment_time .floor {
+	margin-left: 2rem;
+}
+.content .comment-content li {
+	margin: 5rem 0;
+}
+/*.ping{
+    background-color: #efefef;
+    padding-left: 2rem;
+}
+.number{
+    height:5rem;
+    padding-left: 2rem;
+    font-size: 3rem;
+}
+.number span.write{
+    color:#4093c6;
+    float:right;
+    margin-right: 2rem;
+}*/
+.operate {
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+    background-color: #f2f2f2;
+    border-top: 1px solid #d8d8d8;
+}
+.operate .operate-c {
+    float: left;
+    height: 100%;
+    width: 33.3333%;
+    text-align: center;
+    line-height: 5rem;
+}
+.operate .operate-c span {
+    font-size: 2rem;
+    color: #4f4f4f;
+    letter-spacing: 0;
+    line-height: 5rem;
+}

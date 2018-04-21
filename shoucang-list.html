@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>收藏列表</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script type="text/javascript"  src="https://cdn.bootcss.com/jquery/3.2.0/jquery.js"></script>
+	<script src="./js/vue.js"></script>
+	<link rel="stylesheet" href="./css/shoucang-list.css">
+</head>
+<body>
+	<div id="main">
+		<div class="header">
+			<div><span>收藏中心</span></div>
+		</div>
+		<ul class="list">
+			<li v-for="item in list">
+				<span>{{item.title}}</span>
+			</li>
+		</ul>
+	</div>
+	<script src="./js/shoucang-list.js"></script>
+</body>
+</html>

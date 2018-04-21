@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSDN</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script type="text/javascript"  src="https://cdn.bootcss.com/jquery/3.2.0/jquery.js"></script>
+	<script src="./js/vue.js"></script>
+	<link rel="stylesheet" href="./css/csdn.css">
+	<link rel="stylesheet" type="text/css" href="./Swiper-3.4.2/dist/css/swiper.min.css">
+</head>
+<body>
+	<div id="main">
+		<div class="header">
+			<div class="header-left">
+				<div class="left-list"></div>
+				<div class="logo"></div>
+			</div>
+			<div class="header-right">
+				<a class="floatL search_btn" href="http://so.csdn.net/so/?t=csdn">
+					<svg xmlns="//www.w3.org/2000/svg" viewBox="0 0 64 64">
+						<path d="M64 58.3L58.4 64 43 48.5c-4.5 3.5-10.1 5.6-16.2 5.6C12 54.1 0 42 0 27S12 0 26.8 0s26.8 12.1 26.8 27c0 5.9-1.9 11.3-5.1 15.8L64 58.3zM26.8 6.5C15.6 6.5 6.5 15.7 6.5 27s9.1 20.5 20.3 20.5c11.2 0 20.3-9.2 20.3-20.5S38 6.5 26.8 6.5z" fill="#999">
+						</path>
+					</svg>
+				</a>
+				<div class="login">        
+					<a href="./registered.html">登录</a>
+					<a class="write" href="./fabu.html">写博客</a>      
+				</div>
+			</div>
+		</div>
+		<nav class="d-flex">
+    		<div class="nav-mask">
+        		<div class="warp clearfix">
+                    <a class="btn-nav active" >推荐</a>
+                    <a class="btn-nav">最新文章</a>
+                    <a class="btn-nav">关注</a>
+                    <a class="btn-nav">资讯</a>
+                    <a class="btn-nav">人工智能</a>
+                    <a class="btn-nav">云计算/大数据</a>
+                    <a class="btn-nav">区块链</a>
+                    <a class="btn-nav">数据库</a>
+                    <a class="btn-nav">程序人生</a>
+                    <a class="btn-nav">游戏开发</a>
+                    <a class="btn-nav">研发管理</a>
+                    <a class="btn-nav">前端</a>
+                    <a class="btn-nav">移动开发</a>
+                    <a class="btn-nav">物联网</a>
+                    <a class="btn-nav">运维</a>
+                    <a class="btn-nav">计算机基础</a>
+                    <a class="btn-nav">编程语言</a>
+                    <a class="btn-nav">架构</a>
+                    <a class="btn-nav">音视频开发</a>
+                    <a class="btn-nav">安全</a>
+                    <a class="btn-nav">其他</a>
+                </div>
+    		</div>
+		</nav>
+		<div class="pic-list">
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			    	<a class="swiper-slide" href="javascript:void(0)" v-for="item in picList">
+						<img :src="item.img" alt="">
+					</a>			
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<ul class="news-item" >
+			<li class="first-news"  v-for="item in list">
+				<a v-bind:href="'./details.html?id='+item.id">
+					<h2>{{item.title}}</h2>
+					<div class="info-tag">          
+						<a class="tag">{{item.classify_name}}</a>        
+						<a class="user-name">{{item.author_name}}</a>     
+						<a class="read-count">{{item.read_num}}</a>
+						<a class="date">{{item.date}}</a>      
+					</div>
+				<!-- </a> -->
+			</li>
+		</ul>
+	</div>
+	<script src="./Swiper-3.4.2/dist/js/swiper.min.js"></script>
+	<script src="./js/csdn.js"></script>
+</body>
+</html>
